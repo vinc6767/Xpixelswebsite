@@ -1,0 +1,226 @@
+<html>
+    <head>
+      <audio id="bgMusic" src="Friday Night Funkin - Artistic Expression (Charting Editor Theme).mp3" loop autoplay muted></audio>
+        <title>Xpixels Website</title>
+        <style>
+       * {
+          cursor: none;
+          }
+        </style>
+    </head>
+    <body style="background-color:rgb(87, 87, 87);">
+      <div class="boxfortext">
+        <img src="tv.png" width="55px" height="55px" onclick="opennewwindow3()"/>
+<p style="color:rgb(0, 0, 0); margin: 0;">my games</p>
+</div>
+<p></p>
+<h1></h1>
+<h1></h1>
+      <div class="BoxNeroTitolo">
+         <img src="hi.png" height="70px"/>  
+        <h1 style="color:rgb(255, 255, 255); margin: 0;">Welcome to my website!</h1>
+       
+        <p style="color:rgb(255, 255, 255); padding: 0; margin: 0;">im a developer/artist that likes alot of stuff so uh yea heres links if you want to known anything about me : 3</p> 
+      </div>
+<p></p>
+
+      <div class="Boxabout">
+       <img src="_.svg" onclick="openNewWindow()" 
+         onmouseover="this.src='_2.svg'" 
+         onmouseout="this.src='_.svg'"
+         alt="Hover Image"/>
+         </a>
+        </div> 
+        <p>about me</p>
+        <div class="Boxabout">
+        <img src="credits.png" height="50px" onclick="opennewwindow2()"/>  
+        </div>     
+<p>credits</p>
+  <div class="boxbutton">     
+ <a href="https://www.youtube.com/@vincdestroypixel/"> <img src=youtubelogo.png height="80px" width="110px"/> </a> 
+ <h4 style="color:rgb(255, 255, 255);">my youtube : D</h4>
+ </div>
+  <p></p>
+<div class="tikbutton">
+<a href="https://www.tiktok.com/@vincdestroypixel/"> <img src=Tiktok_icon.png height="80px" width="80px"/> </a>
+ <h4 style="color:rgb(255, 255, 255);">my tiktok : 3</h4>
+</div>
+<p></p>
+<div class="ngbutton">
+<a href="https://pixeldestroyer123.newgrounds.com/"> <img src=ng_tank.png height="80px" width="85px"/> </a>
+ <h4 style="color:rgb(255, 255, 255);">my newground : O</h4>
+</div> 
+<p></p>
+ <div class="gamejoltbutton">
+<a href="https://gamejolt.com/@Xpixels/"> <img src=game-jolt.png height="80px" width="80px"/> </a>
+ <h4 style="color:rgb(255, 255, 255);">my newground : )</h4>
+</div>
+ <div id="customCursor">
+ <img src="mouse.png"/>
+ </div>
+
+<script>
+  const clickSound = new Audio('click.wav');
+
+  document.addEventListener('click', (event) => {
+    clickSound.currentTime = 0; 
+    clickSound.play();
+  });
+</script>
+
+<script>
+  const cursor = document.getElementById('customCursor');
+
+  document.addEventListener('mousemove', (e) => {
+    cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
+  });
+</script>
+<script>
+  window.addEventListener('load', () => {
+    const bgMusic = document.getElementById('bgMusic');
+    bgMusic.muted = false; // unmute
+    bgMusic.volume = 0.3;
+    bgMusic.play().catch(() => console.log("Autoplay blocked"));
+  });
+</script>
+ <script>
+        function openNewWindow() {
+            window.open("about section.html", "_blank", "width=800,height=600");
+        }
+    </script>
+     <script>
+        function opennewwindow2() {
+            window.open("credits.html", "_blank", "width=800,height=600");
+        }
+    </script>
+    <script>
+        function opennewwindow3() {
+            window.open("mygames.html", "_blank", "width=800,height=600");
+        }
+    </script>
+    </body>
+   <style>
+  body {
+    font-family: "Segoe UI", sans-serif;
+  }
+  .BoxNeroTitolo{
+    width: 100%;
+    background-color: #2b2b2b;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 25px; 
+  }
+button:hover, img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+button, img {
+  transition: transform 0.3s ease; 
+}
+
+button:hover, img:hover {
+  border-radius: 25px;
+  transform: scale(1.1); 
+}
+.Boxbutton{
+     width: 15%;
+    background-color: #3f0000;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 25px;
+    align-items: center
+  }
+  #customCursor {
+  position: fixed;      
+  top: 0;
+  left: 0;
+  width: 30px;          
+  height: 30px; 
+  border-radius: 50%;   
+  pointer-events: none; 
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s ease;
+  z-index: 9999; 
+}
+ .tikbutton{
+     width: 15%;
+    background-color: #09001f;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 25px;
+    align-items: center
+    }
+     .boxabout{
+     width:5%;
+     height: 5%;
+    background-color: #353535;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 25px;
+    align-items: center
+    }
+        .boxabout2{
+     width:5%;
+     height: 5%;
+    background-color: #353535;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 25px;
+    align-items: center
+    }
+ .ngbutton{
+     width: 15%;
+    background-color: #5f3300;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 25px;
+    align-items: center
+    }
+     .gamejoltbutton{
+     width: 15%;
+    background-color: #084200;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 25px;
+    align-items: center
+    }
+     .boxfortext{
+     width: 9%;
+    height: 5%;
+    background-color: #363636;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 25px;
+    align-items: center
+ }
+ .Boxcoverui{
+    width: 80%;
+    background-color: #2b2b2b;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    
+    
+    gap: 5px;
+    border-radius: 10px; 
+     }
+  </style>
+ 

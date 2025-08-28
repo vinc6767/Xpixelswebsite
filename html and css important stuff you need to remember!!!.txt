@@ -1,0 +1,4 @@
+use <html> stuff  </html> then put <head> stuff </head> then <body>stuff </body>
+important text stuff 
+h1
+p
